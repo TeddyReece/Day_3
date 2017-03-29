@@ -1,0 +1,38 @@
+.flex-container {
+  display: flex;
+  flex-flow: wrap;
+  text-align: center;
+}
+
+.header, .aside1, .aside2, .important, .footer {
+  flex: 1 100%;
+}
+
+.header {
+  background-color: blue;
+}
+
+.important {
+  background-color: skyblue;
+}
+
+.aside1 {
+  background-color: green;
+}
+
+.aside2 {
+  background-color: yellow;
+}
+
+.footer {
+  background-color: pink;
+}
+
+@media all and (min-width: 600px) {
+  .aside {flex: 1 auto;}
+}
+
+@media all and (min-width: 900px) {
+  .important {flex: 2}
+
+}
